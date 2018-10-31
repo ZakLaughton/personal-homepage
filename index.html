@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
-    <title>Jane's site</title>
-  </head>
-  <body>
-    <header>
-      <!-- image used from http://logo.kenh.net/logo/udacity.svg.html -->
-      <img src="img/udacity.png" alt="Udacity logo">
-      <h1>Jane Doette</h1>
-      <h2>Front-end ninja</h2>
-      <hr>
-    </header>
-    <section class="cover-image">
-      <!-- image used from https://dzone.com/articles/design-patterns-template-method -->
-      <img src="img/code.jpg" alt="code cover image">
-    </section>
-    <section class="bio">
-      <hr>
-      <p>Jane is a front-end developer with 5 years of experience and a pet iguana.</p>
-      <hr>
-    </section>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67511792-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host != "localhost") {
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-67511792-1');
+    }
+  </script>
+  <title>Zak's site</title>
+</head>
+
+<body>
+  <header>
+    <h1>Zak Laughton</h1>
+    <h2>Front-end Developer</h2>
+    <hr>
+  </header>
+  <section class="cover-image">
+    <!-- image used from https://dzone.com/articles/design-patterns-template-method -->
+    <img src="img/code.jpg" alt="code cover image">
+  </section>
+  <section class="bio">
+    <hr>
+    <div class="bio-text">
+      <h3>Hi, my name is Zak. I build web apps.</h3>
+      <div class="social-links">
+        <a href="https://github.com/zlaughton">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zlaughton/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <hr>
+
+  </section>
+  <section class="social"></section>
+  <section class="featured-work">
     <h2 class="featured-work-title">Featured Work</h2>
-    <section class="featured-work">
+    <div class="featured-work-container">
       <div class="work-item">
-        <!-- image used from https://techcrunch.com/2017/01/12/the-mobile-app-gold-rush-may-be-over/ -->
-        <img src="img/appify.jpg" alt = "Appify image - apps">
-        <h3>Appify</h3>
-        <p>https://github.com/udacity/Appify/</p>
+        <a href="https://map.zaklaughton.com">
+          <img src="img/map-project.png" alt="Appify image - apps">
+          <h3>Restaurant Map</h3>
+        </a>
+        <p><a href="https://github.com/zlaughton/map-project">https://github.com/zlaughton/map-project</a></p>
       </div>
       <div class="work-item">
-        <!-- image used from https://www.almanac.com/plant/sunflowers -->
-        <img src="img/sunflower.jpg" alt = "Sunflower">
-        <h3>Sunflower</h3>
-        <p>https://github.com/udacity/Sunflower/</p>
+        <a href="https://crossy.zaklaughton.com">
+          <img src="img/crossy-game.png" alt="Sunflower">
+          <h3>Crossy Game</h3>
+        </a>
+        <p><a href="https://github.com/zlaughton/crossy-arcade-game">https://github.com/zlaughton/crossy-arcade-game</a></p>
       </div>
       <div class="work-item">
-        <!-- image used from http://www.fotografiaprofissional.org/dicas-de-fotografia-profissional-bokeh/ -->
-        <img src="img/bokeh.jpg" alt="Bokeh image - blurry lights">
-        <h3>Bokeh</h3>
-        <p>https://github.com/udacity/Bokeh/</p>
+        <a href="https://memory.zaklaughton.com">
+          <img src="img/memory-game.png" alt="Bokeh image - blurry lights">
+          <h3>Memory Game</h3>
+        </a>
+        <p><a href="https://github.com/zlaughton/memory-game">https://github.com/zlaughton/memory-game</a></p>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
