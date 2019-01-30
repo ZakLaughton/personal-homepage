@@ -137,3 +137,7 @@ section>h2 {
   text-transform: uppercase;
   font-size: 2em;
 }
+
+.work-item img {
+  max-height: 186.66px;
+}
